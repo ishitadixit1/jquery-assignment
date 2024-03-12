@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./student.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="./student.css">
+</head>
+<body>
+<div class="container">
+<div>
+    <h2 class="heading">Student Validation Form</h2>
+</div>
+
+<div>
+<form name="studentForm" id="studeForm" onsubmit="return validateForm()" method="post">
+  <br><br>
+  <label for="fname">First Name: </label>
+  <input type="text" placeholder="Enter your first name" name="fname" id="fname">
+  <br><span id="fmsg"></span>
+  <label for="lname">Last Name: </label>
+  <input type="text" placeholder="Enter your last name" name="lname" id="lname">
+  <br><span id="lmsg"></span>
+  Age: <input type="number" name="age" placeholder="Enter age" id="age">
+  <br><span id="age-error"></span>
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  Male
+  <input type="radio" id="female" name="gender" value="female">
+  Female
+  <br><span id="msg"></span>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" placeholder="Enter dob" name="dob">
+  <br><span id="dd"></span>
+  <label for="rollNo">Roll No:</label>
+  <input type="number" id="rollNo" placeholder="Enter roll no" name="rollNo">
+  <br><span id="roll"></span>
+  <label for="dept">Choose a department:</label>
+  <select id="dept" name="dept">
+    <option value="management">Management</option>
+    <option value="it">IT</option>
+    <option value="arts">Arts</option>
+  </select><br>
+  Hobbies: <input type="text" name="hobbies" placeholder="Enter hobbies" id="hobbies">
+  <br><span id="hobby"></span><br>
+  <input type="submit" id="add" value="Submit">
+</form>
+</div>
+</div>
+<div class="fetch-student">
+  <input type="text" placeholder="Search student by roll no" name="sname" id="sname"><br>
+  <input type="button" onclick="getStudent()" id="get" value="Get">
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+    font-family:cursive;
+}
+html{
+    background-image: url('https://img.freepik.com/premium-vector/abstract-trendy-floral-background-vector_7087-1882.jpg');
+
+}
+#studeForm{
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    align-items:center ;
+    background-color:darkseagreen;
+    margin-left: 30%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+input,select{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 24px;
+}
+
+#add{
+    background-color: teal;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 200px;
+    padding: 6px 20px 16px 20px;
+}
+h2{
+    margin-left: 40%;
+}
+.container{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 120px;
+}
+.heading{
+    margin-right: -60px;
+}
+.fetch-student{
+    top: 500px;
+    left: 200px;
+    position: absolute;
+}
+#sname{
+    border: 2px solid black;
+}
+#get{
+    background-color: teal;
+    margin-left: 75px;
+    padding: 8px 20px;
+    color: white;
+}
